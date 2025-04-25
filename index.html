@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agire Motors</title>
+    <link rel="icon" type="image/png" href="assets/icon.jpg" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -16,22 +18,22 @@
     <div class="bg-dark text-white py-2 fixed-top w-100" style="z-index: 1000;">
         <div class="container d-flex justify-content-between align-items-center">
             <!-- Sol kısımda Arama Kutusu -->
-            <div class="input-group" style="width: 300px;">
+            <div class="input-group" style="max-width: 300px; width: 100%;">
                 <span class="input-group-text bg-light border-0" id="basic-addon1">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
                 <input type="text" id="search-bar" class="form-control" placeholder="Marka ara..." style="border-left: none;">
             </div>
             <!-- Logo -->
-            <img src="assets/logo.jpg" class="navbar-logo" alt="Logo" ">
+            <img src="assets/logo.jpg" class="navbar-logo" alt="Logo" style="max-height: 50px;">
         </div>
     </div>
 
-    <!-- Sağ üstte sabit buton -->
-    <button class="btn btn-primary add-btn-fixed" onclick="addCard()">Yeni Motor Ekle</button>
+    <!-- Sağ üstte sabit buton (Sayfanın sağ üst kısmında olacak) -->
+    <button class="btn btn-primary add-btn-fixed position-fixed top-0 end-0 m-2" onclick="addCard()">Yeni Motor Ekle</button>
 
     <div class="container py-5 mt-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4" id="card-container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" id="card-container">
             <!-- Honda Motor Kartları -->
             <div class="col motor-card" data-brand="Honda">
                 <div class="card h-100">
