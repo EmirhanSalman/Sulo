@@ -1,0 +1,71 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+    color: #343a40;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    outline: none;
+}
+
+.add-btn-fixed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.navbar-logo {
+    width: 17%;
+    height: auto;
+    object-fit: contain;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.motor-name {
+    font-weight: bold;
+}
+
+/* Arama kutusunun stilini özelleştir */
+#search-bar {
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+}
+
+#search-bar {
+    border-left: none;
+}
